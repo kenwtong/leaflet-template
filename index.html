@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+ 	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">	
+	<meta name="description" content="A blurb to describe the content of the page appears here">
+	<meta name="author" content="Author">
+	<link rel="icon" href="./favicon.ico">
+	
+  	<title>Map Template</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+	<link rel="stylesheet" href="css/style.css">
+	
+	<!-- Add Modernizer in HEAD before other JavaScript -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <body>
+	<header>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+			
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>		
+			
+				<a href="#" class="navbar-brand">Map Template</a>
+				<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#about" data-toggle="modal" data-target="#aboutModal">About</a></li>
+						<li><a href="#contact" data-toggle="modal" data-target="#contactModal">Contact</a></li>					
+					</ul><!-- end nav -->
+				</nav><!-- end nav collapse -->		
+			</div>
+		</div>
+	</header>
+	
+	<!-- Main Map -->
+	<div class="container" id="main">
+		<div id="map">
+		</div>
+		
+		<!-- Uncomment sidebar if column is required
+			 and add class="col-sm-8" to map div. 
+			 Be aware the sidebar will get pushed below
+			 the map with small devices. -->
+		<!--
+		<div id="sidebar" class="col-sm-4">
+		
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<h3>Panel Heading</h3>
+					<p>text or form elements</p>
+				</div>
+			</div> <!-- end panel -->
+			<!--
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<h3>Panel Heading</h3>
+					<p>text or form elements</p>
+				</div> 
+			</div> <!--
+		</div> <!-- end sidebar -->
+	</div> <!-- end main container -->
+	
+
+	<!-- About Modal -->
+	<div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="modal-close "aria-hidden="true">&times;</span></button>
+					<h3 class="modal-title" id="aboutModalLabel">About Map Template</h3>
+				</div>
+				<div class="modal-body">
+					<p>This is a Leaflet web map template preloaded with base layers from:
+						<ul>
+							<li><a href="https://www.openstreetmap.org" target="_blank">OpenStreetMap</a></li>
+							<li><a href="http://stamen.com" target="_blank">Stamen</a></li>
+							<li><a href="http://esri.com" target="_blank">Esri</a></li>
+						</ul>
+					</p>
+					<p>Feel free to use this template and customize it to your own needs.</p>
+				</div>
+			</div> <!-- /.modal-header -->
+		</div> <!-- /.modal-dialog -->
+	</div> <!-- /.modal -->
+	
+	<!-- Contact Modal -->
+	<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span "aria-hidden="true">&times;</span></button>
+					<h3 class="modal-title" id="contactModalLabel">Contact Me</h3>
+				</div>
+				<div class="modal-body">
+					<p>Add your contact information here when you build your application.</p>
+				</div>
+			</div> <!-- /.modal-header -->
+		</div> <!-- /.modal-dialog -->
+	</div> <!-- /.modal -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<!-- Leaflet JavaScript -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+	<!-- Stamen JavaScript for Stamen tiles -->
+	<script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.3.0"></script>	
+	<!-- Esri Leaflet - Basemaps Only Build -->
+	<script src="http://cdn.jsdelivr.net/leaflet.esri/1.0.0-rc.8/builds/basemaps/esri-leaflet-basemaps.js"></script>	
+	<script src="js/main.js"></script>
+  </body>
+</html>
+	
