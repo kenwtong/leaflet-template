@@ -14,3 +14,5 @@ The template is preloaded with layers from:
 - Change the About and Contact modals
 - Change the title
 - Deploy
+
+![Leaflet Template](img/leaflet-template.png)
